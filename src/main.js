@@ -18,6 +18,7 @@ const i18n = new VueI18n({
 })
 
 new Vue({
+  el: '#app',
   i18n,
   render: h => h(App),
-}).$mount('#app')
+})

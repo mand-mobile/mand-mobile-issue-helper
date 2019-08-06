@@ -77,7 +77,7 @@
 import Statement from './components/Statement'
 import FeatureRequest from './components/FeatureRequest'
 import BugReport from './components/BugReport'
-import { getQuery, updateQuery } from './helpers'
+import { getQuery } from './helpers'
 
 export default {
   name: 'app',
@@ -103,9 +103,6 @@ export default {
     }
   },
   watch: {
-    'basic.project' (val) {
-      updateQuery({ project: val })
-    },
   },
   created () {
     this.$set(this.basic, 'project', getQuery().project || 'mand-mobile')
