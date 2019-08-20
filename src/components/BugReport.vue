@@ -29,7 +29,7 @@
     </div>
     <div class="md-ih-form-item">
       <el-form-item :label="$t('recurring')">
-        <el-input v-model="attrs.recurring" maxlength="50" placeholder="https://codesandbox.io/s/mand-mobile-quick-start-ckqbz"></el-input>
+        <el-input v-model="attrs.recurring" maxlength="100" placeholder="https://codesandbox.io/s/mand-mobile-quick-start-ckqbz"></el-input>
         <p class="md-ih-form-item-tips" v-html="$t('recurringTips')"></p>
       </el-form-item>
     </div>
